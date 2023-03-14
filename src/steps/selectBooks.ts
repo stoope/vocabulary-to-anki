@@ -10,7 +10,7 @@ async function selectBooks(books: Book[]) {
     hint: "- Space to select. Return to submit",
   });
 
-  return result as Book[];
+  return result as Book[] | undefined;
 }
 
 export { selectBooks };

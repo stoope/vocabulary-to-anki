@@ -37,6 +37,13 @@ async function run() {
 
   const books = await selectBooks(await db.getAllBooks());
 
+  if (!books) {
+    console.log(
+      colors.yellow("You don't have any book at the Vocabulary Builder")
+    );
+    return;
+  }
+
   const deckNames = new Map();
   const lookups = new Map<string, Lookup[]>();
 
