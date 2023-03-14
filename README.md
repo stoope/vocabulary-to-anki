@@ -1,6 +1,6 @@
 # vocabulary-to-anki
 
-Library that creates Anki cards for language learning
+Export Kindle Vocabulary Builder to Anki cards
 
 ## Highlights
 
@@ -9,6 +9,12 @@ Library that creates Anki cards for language learning
 - Adds `Text To Speech` for cards (using `Google Cloud`)
 - Adds `translation` for cards (using `Google Cloud`)
 - Automatic `Day/Night` color scheme
+
+<img src="front-dark.jpeg" width="300px">
+<img src="back-dark.jpeg" width="300px">
+<br />
+<img src="front-light.jpeg" width="300px">
+<img src="back-light.jpeg" width="300px">
 
 ## Prerequisites
 
