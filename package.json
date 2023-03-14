@@ -1,6 +1,6 @@
 {
   "name": "vocabulary-to-anki",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Library that creates Anki cards for language learning",
   "main": "lib/index.js",
   "bin": {
@@ -10,7 +10,7 @@
   "scripts": {
     "lint": "prettier --check . && eslint .",
     "format": "prettier --write .",
-    "build": "tsc && cp -r ./assets  ./lib/assets",
+    "build": "rm -r ./lib && tsc && cp -r ./assets  ./lib/assets",
     "prepare": "npm run build",
     "prepublishOnly": "npm run lint",
     "preversion": "npm run lint",
