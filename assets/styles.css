@@ -1,0 +1,89 @@
+.card {
+  font-size: 18px;
+  font-family: arial, sans-serif;
+  background-color: var(--background);
+  color: var(--foreground);
+  --background: rgb(var(--background-rgb));
+  --foreground: rgb(var(--foreground-rgb));
+  --background-rgb: var(--white-rgb);
+  --foreground-rgb: var(--black-rgb);
+  --selection: rgb(var(--selection-rgb-light));
+  --cyan: rgb(var(--cyan-rgb-light));
+  --green: rgb(var(--green-rgb-light));
+  --orange: rgb(var(--orange-rgb-light));
+  --pink: rgb(var(--pink-rgb-light));
+  --purple: rgb(var(--purple-rgb-light));
+  --red: rgb(var(--red-rgb-light));
+  --yellow: rgb(var(--yellow-rgb-light));
+  --black: rgb(var(--black-rgb));
+  --white: rgb(var(--white-rgb));
+  --comment: rgb(var(--comment-rgb));
+  --comment-rgb: 121, 112, 169;
+  --selection-rgb: 69, 65, 88;
+  --cyan-rgb: 128, 255, 234;
+  --green-rgb: 138, 255, 128;
+  --orange-rgb: 255, 202, 128;
+  --pink-rgb: 255, 128, 191;
+  --purple-rgb: 149, 128, 255;
+  --red-rgb: 255, 149, 128;
+  --yellow-rgb: 255, 255, 128;
+  --black-rgb: 34, 33, 44;
+  --white-rgb: 248, 248, 242;
+  --selection-rgb-light: 176, 172, 194;
+  --cyan-rgb-light: 0, 229, 191;
+  --green-rgb-light: 18, 229, 0;
+  --orange-rgb-light: 229, 133, 0;
+  --pink-rgb-light: 229, 0, 113;
+  --purple-rgb-light: 37, 0, 229;
+  --red-rgb-light: 229, 37, 0;
+  --yellow-rgb-light: 229, 229, 0;
+}
+.card.nightMode {
+  background-color: var(--background);
+  color: var(--foreground);
+  --background: rgb(var(--black-rgb));
+  --foreground: rgb(var(--white-rgb));
+  --selection: rgb(var(--selection-rgb));
+  --cyan: rgb(var(--cyan-rgb));
+  --green: rgb(var(--green-rgb));
+  --orange: rgb(var(--orange-rgb));
+  --pink: rgb(var(--pink-rgb));
+  --purple: rgb(var(--purple-rgb));
+  --red: rgb(var(--red-rgb));
+  --yellow: rgb(var(--yellow-rgb));
+}
+::selection {
+  background-color: var(--selection);
+}
+.content {
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 26px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.audio-back {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+strong {
+  color: var(--orange);
+}
+.book-title {
+  color: var(--comment);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.usage {
+  color: rgba(var(--foreground-rgb), 0.8);
+  text-align: justify;
+}
+.translate {
+  color: rgba(var(--foreground-rgb), 0.8);
+}

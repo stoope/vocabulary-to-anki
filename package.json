@@ -1,0 +1,63 @@
+{
+  "name": "vocabulary-to-anki",
+  "version": "1.0.0",
+  "description": "Library that creates Anki cards for language learning",
+  "main": "lib/index.js",
+  "bin": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "lint": "prettier --check . && eslint .",
+    "format": "prettier --write .",
+    "build": "tsc && cp -r ./assets  ./lib/assets",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "keywords": [
+    "kindle",
+    "vocabulary",
+    "words",
+    "anki",
+    "translate"
+  ],
+  "author": "Stepan Kurennykh",
+  "homepage": "https://github.com/stoope/vocabulary-to-anki",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/mustache": "^4.2.2",
+    "@types/node": "^16.18.15",
+    "@types/progress": "^2.0.5",
+    "@types/prompts": "^2.4.3",
+    "@types/uuid": "^9.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.54.1",
+    "@typescript-eslint/parser": "^5.54.1",
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.7.0",
+    "prettier": "^2.8.4",
+    "typescript": "^4.9.5"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "engines": {
+    "node": ">=16",
+    "npm": ">=8"
+  },
+  "volta": {
+    "node": "16.19.1"
+  },
+  "dependencies": {
+    "@google-cloud/text-to-speech": "^4.2.1",
+    "@google-cloud/translate": "^7.2.0",
+    "anki-apkg-export": "^4.0.3",
+    "colors": "^1.4.0",
+    "downloads-folder": "^3.0.3",
+    "kindle-vocab-tools": "^1.1.1",
+    "mustache": "^4.2.0",
+    "progress": "^2.0.3",
+    "prompts": "^2.4.2",
+    "uuid": "^9.0.0"
+  }
+}
