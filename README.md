@@ -10,11 +10,8 @@ Export Kindle Vocabulary Builder to Anki cards
 - Adds `translation` for cards (using `Google Cloud`)
 - Automatic `Day/Night` color scheme
 
-<img src="front-dark.jpeg" width="300px">
-<img src="back-dark.jpeg" width="300px">
-<br />
-<img src="front-light.jpeg" width="300px">
-<img src="back-light.jpeg" width="300px">
+![front-dark](front-dark.jpeg) ![back-dark](back-dark.jpeg)
+![front-light](front-light.jpeg) ![back-light](back-light.jpeg)
 
 ## Prerequisites
 
