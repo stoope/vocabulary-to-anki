@@ -1,4 +1,4 @@
-#! /usr/bin/env node
+#!/usr/bin/env node
 
 import fs from "fs";
 import colors from "colors/safe";

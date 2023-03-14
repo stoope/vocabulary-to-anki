@@ -1,9 +1,11 @@
 {
   "name": "vocabulary-to-anki",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Library that creates Anki cards for language learning",
   "main": "lib/index.js",
-  "bin": "lib/index.js",
+  "bin": {
+    "vocabulary-to-anki": "lib/index.js"
+  },
   "types": "lib/index.d.ts",
   "scripts": {
     "lint": "prettier --check . && eslint .",
