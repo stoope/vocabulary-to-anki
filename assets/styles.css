@@ -81,9 +81,5 @@ strong {
   margin-bottom: 0;
 }
 .usage {
-  color: rgba(var(--foreground-rgb), 0.8);
   text-align: justify;
-}
-.translate {
-  color: rgba(var(--foreground-rgb), 0.8);
 }

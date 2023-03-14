@@ -1,6 +1,6 @@
 {
   "name": "vocabulary-to-anki",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Library that creates Anki cards for language learning",
   "main": "lib/index.js",
   "bin": {
