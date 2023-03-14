@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 import fs from "fs";
 import colors from "colors/safe";
 import path from "path";
