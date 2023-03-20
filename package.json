@@ -10,7 +10,7 @@
   "scripts": {
     "lint": "prettier --check . && eslint .",
     "format": "prettier --write .",
-    "build": "rm -r ./lib && tsc && cp -r ./assets  ./lib/assets",
+    "build": "rm -rf ./lib && tsc && cp -r ./assets  ./lib/assets",
     "prepare": "npm run build",
     "prepublishOnly": "npm run lint",
     "preversion": "npm run lint",
