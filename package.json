@@ -1,6 +1,6 @@
 {
   "name": "vocabulary-to-anki",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Library that creates Anki cards for language learning",
   "main": "lib/index.js",
   "bin": {
@@ -33,12 +33,12 @@
     "@types/progress": "^2.0.5",
     "@types/prompts": "^2.4.3",
     "@types/uuid": "^9.0.1",
-    "@typescript-eslint/eslint-plugin": "^5.54.1",
-    "@typescript-eslint/parser": "^5.54.1",
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/parser": "^5.56.0",
     "eslint": "^8.36.0",
-    "eslint-config-prettier": "^8.7.0",
-    "prettier": "^2.8.4",
-    "typescript": "^4.9.5"
+    "eslint-config-prettier": "^8.8.0",
+    "prettier": "^2.8.5",
+    "typescript": "^5.0.2"
   },
   "files": [
     "lib/**/*"
