@@ -36,6 +36,7 @@ async function generateDeck({
     const usageSpeechName = `${uuidv4()}.mp3`;
 
     const usageTranslate = await getTranslate(lookup.usage, inLang, outLang);
+    const stemTranslate = await getTranslate(lookup.stem, inLang, outLang);
 
     const formattedUsage = lookup.usage.replace(
       new RegExp("(" + lookup.word + ")", "gi"),
@@ -55,10 +56,11 @@ async function generateDeck({
       fs.readFileSync(path.join(rootPath, "assets/back.html")).toString(),
       {
         stem: lookup.stem,
-        book_title: lookup.book_title,
+        bookTitle: lookup.book_title,
         usage: formattedUsage,
         audioUsageFilePath: usageSpeechName,
-        translate: usageTranslate,
+        usageTranslate,
+        stemTranslate,
       }
     );
 

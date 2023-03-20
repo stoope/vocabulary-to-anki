@@ -1,9 +1,10 @@
 <section class="content">
   <h3 class="title">{{ stem }}</h3>
-  <h5 class="book-title">{{ book_title }}</h5>
+  <p class="stem-translate">{{ stemTranslate }}</p>
+  <h5 class="book-title">{{ bookTitle }}</h5>
   <p class="usage">{{{ usage }}}</p>
   <audio src="{{ audioUsageFilePath }}" autoplay controls type="audio/mpeg">
     <a href="{{ audioUsageFilePath }}">Download audio</a>
   </audio>
-  <p class="usage">{{ translate }}</p>
+  <p class="usage">{{ usageTranslate }}</p>
 </section>

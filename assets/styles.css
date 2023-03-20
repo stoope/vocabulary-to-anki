@@ -83,3 +83,6 @@ strong {
 .usage {
   text-align: justify;
 }
+.stem-translate:first-letter {
+  text-transform: uppercase;
+}
