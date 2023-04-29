@@ -57,7 +57,9 @@ async function run() {
     let bookLookups: Lookup[] = [];
     try {
       bookLookups = await db.getLookupsByBookId(book.id);
-    } catch { /* empty */ }
+    } catch {
+      /* empty */
+    }
 
     if (!lookups.has(lang.value)) {
       lookups.set(lang.value, []);
