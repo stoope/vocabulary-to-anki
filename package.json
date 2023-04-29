@@ -31,14 +31,14 @@
     "@types/mustache": "^4.2.2",
     "@types/node": "^16.18.15",
     "@types/progress": "^2.0.5",
-    "@types/prompts": "^2.4.3",
+    "@types/prompts": "^2.4.4",
     "@types/uuid": "^9.0.1",
-    "@typescript-eslint/eslint-plugin": "^5.56.0",
-    "@typescript-eslint/parser": "^5.56.0",
-    "eslint": "^8.36.0",
+    "@typescript-eslint/eslint-plugin": "^5.59.1",
+    "@typescript-eslint/parser": "^5.59.1",
+    "eslint": "^8.39.0",
     "eslint-config-prettier": "^8.8.0",
-    "prettier": "^2.8.5",
-    "typescript": "^5.0.2"
+    "prettier": "^2.8.8",
+    "typescript": "^5.0.4"
   },
   "files": [
     "lib/**/*"
@@ -51,8 +51,8 @@
     "node": "16.19.1"
   },
   "dependencies": {
-    "@google-cloud/text-to-speech": "^4.2.1",
-    "@google-cloud/translate": "^7.2.0",
+    "@google-cloud/text-to-speech": "^4.2.2",
+    "@google-cloud/translate": "^7.2.1",
     "anki-apkg-export": "^4.0.3",
     "colors": "^1.4.0",
     "downloads-folder": "^3.0.3",
