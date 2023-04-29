@@ -54,7 +54,11 @@ async function run() {
     book.lang = lang.value;
     deckNames.set(lang.value, lang.title);
 
-    const bookLookups = await db.getLookupsByBookId(book.id);
+    let bookLookups: Lookup[] = [];
+    try {
+      bookLookups = await db.getLookupsByBookId(book.id);
+    } catch { /* empty */ }
+
     if (!lookups.has(lang.value)) {
       lookups.set(lang.value, []);
     }
